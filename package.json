@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@hi-ui/core": "^4.0.9",
+    "@hi-ui/hiui": "^4.14.0",
+    "@mi/schema-components": "^0.0.13",
     "@testing-library/dom": "^8.20.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^12.1.5",
