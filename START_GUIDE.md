@@ -110,3 +110,11 @@ npm run dev
 
 就可以开始开发了！🎉
 
+---
+
+## 📚 更多文档
+
+- [路由扩展指南](./ROUTES_GUIDE.md) - 如何添加新的页面和路由
+- [后端API文档](./server/README.md) - 如何添加新的API模块
+- [虚拟列表性能优化](./docs/VIRTUAL_LIST_OPTIMIZATION.md) - 深入理解请求优化和区间交集算法
+

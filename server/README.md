@@ -322,3 +322,9 @@ GET /api
 - [ ] 集成数据库（MongoDB/MySQL）
 - [ ] 添加API文档自动生成（Swagger）
 
+---
+
+## 相关文档
+
+- [虚拟列表性能优化详解](../docs/VIRTUAL_LIST_OPTIMIZATION.md) - 包含请求取消算法和区间交集详解
+
