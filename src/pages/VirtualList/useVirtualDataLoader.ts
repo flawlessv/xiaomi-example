@@ -17,7 +17,7 @@ export const useVirtualDataLoader = (totalCount: number, chunkSize = 40) => {
     
     try {
       const response = await fetch(
-        `http://localhost:3001/api/data?start=${chunkStart}&limit=${chunkSize}`
+        `http://localhost:3001/api/virtual-list/data?start=${chunkStart}&limit=${chunkSize}`
       )
       
       if (!response.ok) {
