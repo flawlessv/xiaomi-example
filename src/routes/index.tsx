@@ -12,9 +12,9 @@ export const routesConfig: RouteConfig[] = [
     icon: '🏠',
   },
   {
-    path: '/table',
-    label: '数据表格',
-    icon: '📊',
+    path: '/virtual-list',
+    label: '虚拟滚动',
+    icon: '🚀',
   },
   {
     path: '/about',

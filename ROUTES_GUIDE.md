@@ -84,6 +84,7 @@ import NewModule from './pages/NewModule';
 |------|------|------|
 | `/` | Home | 首页，展示项目介绍 |
 | `/table` | TablePage | 数据表格页面，展示人员信息管理 |
+| `/virtual-list` | VirtualListPage | 虚拟滚动列表，10000条数据按需加载 |
 | `/about` | About | 关于页面，展示项目技术栈和特性 |
 
 ## 导航菜单

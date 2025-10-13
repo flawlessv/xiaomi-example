@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import MainLayout from './components/Layout/MainLayout';
 import Home from './pages/Home';
 import About from './pages/About';
-import TablePage from './pages/TablePage';
+import VirtualListPage from './pages/VirtualList';
 import { routesConfig } from './routes';
 import './App.css';
 
@@ -13,7 +13,7 @@ function App() {
       <MainLayout routes={routesConfig}>
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route path="/table" component={TablePage} />
+          <Route path="/virtual-list" component={VirtualListPage} />
           <Route path="/about" component={About} />
           {/* 在这里添加更多路由 */}
         </Switch>
