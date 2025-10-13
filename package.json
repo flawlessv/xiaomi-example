@@ -27,7 +27,7 @@
   "scripts": {
     "start": "react-scripts start",
     "server": "node server/index.js",
-    "dev": "concurrently \"npm run server\" \"npm start\"",
+    "dev": "concurrently --names \"后端,前端\" --prefix-colors \"blue,green\" \"npm run server\" \"npm start\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
