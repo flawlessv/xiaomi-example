@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import VirtualListPage from './pages/VirtualList';
 import CSSSelectorsPage from './pages/CSSSelectors';
+import ClassicLayoutsPage from './pages/ClassicLayouts';
 import { routesConfig } from './routes';
 import './App.css';
 
@@ -16,6 +17,7 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route path="/virtual-list" component={VirtualListPage} />
           <Route path="/css-selectors" component={CSSSelectorsPage} />
+          <Route path="/classic-layouts" component={ClassicLayoutsPage} />
           <Route path="/about" component={About} />
           {/* 在这里添加更多路由 */}
         </Switch>

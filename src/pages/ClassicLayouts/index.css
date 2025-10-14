@@ -1,0 +1,524 @@
+.classic-layouts-page {
+  padding: 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+  background: #f5f7fa;
+  min-height: 100vh;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 40px;
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.page-header h1 {
+  font-size: 36px;
+  color: #1e3a8a;
+  margin: 0 0 12px 0;
+  font-weight: 700;
+}
+
+.page-description {
+  font-size: 18px;
+  color: #64748b;
+  margin: 0;
+}
+
+/* 介绍区域 */
+.intro-section {
+  background: white;
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  margin-bottom: 24px;
+}
+
+.intro-section h2 {
+  font-size: 28px;
+  color: #1e3a8a;
+  margin: 0 0 24px 0;
+  font-weight: 600;
+}
+
+.goals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.goal-item {
+  text-align: center;
+  padding: 24px;
+  background: #f8fafc;
+  border-radius: 8px;
+  border: 2px solid #e2e8f0;
+  transition: all 0.3s;
+}
+
+.goal-item:hover {
+  border-color: #1e40af;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.goal-icon {
+  font-size: 48px;
+  margin-bottom: 12px;
+}
+
+.goal-item h3 {
+  font-size: 18px;
+  color: #1e3a8a;
+  margin: 0 0 8px 0;
+}
+
+.goal-item p {
+  font-size: 14px;
+  color: #64748b;
+  margin: 0;
+}
+
+/* Tabs */
+.tabs-section {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  margin-bottom: 24px;
+  overflow: hidden;
+}
+
+.tabs {
+  display: flex;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.tab {
+  flex: 1;
+  padding: 16px;
+  background: white;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #64748b;
+  cursor: pointer;
+  transition: all 0.3s;
+  border-bottom: 3px solid transparent;
+}
+
+.tab:hover {
+  background: #f8fafc;
+  color: #1e40af;
+}
+
+.tab.active {
+  color: #1e40af;
+  border-bottom-color: #1e40af;
+  background: #eff6ff;
+}
+
+/* 布局演示 */
+.layout-demo {
+  padding: 32px;
+}
+
+.layout-demo > h3 {
+  font-size: 24px;
+  color: #1e3a8a;
+  margin: 0 0 24px 0;
+  font-weight: 600;
+}
+
+.demo-container {
+  margin-bottom: 32px;
+  padding: 20px;
+  background: #f8fafc;
+  border-radius: 8px;
+  border: 2px dashed #cbd5e1;
+}
+
+/* 圣杯布局实现 */
+.holy-grail-container {
+  padding-left: 200px;
+  padding-right: 150px;
+  overflow: auto;
+  min-height: 200px;
+}
+
+.holy-grail-container > div {
+  float: left;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.holy-center {
+  width: 100%;
+  background-color: #fecaca;
+}
+
+.holy-left {
+  width: 200px;
+  position: relative;
+  left: -200px;
+  margin-left: -100%;
+  background-color: #a5f3fc;
+}
+
+.holy-right {
+  width: 150px;
+  margin-right: -150px;
+  background-color: #bbf7d0;
+}
+
+/* 双飞翼布局实现 */
+.twin-wings-container {
+  overflow: auto;
+}
+
+.twin-wings-container > div {
+  float: left;
+  min-height: 200px;
+}
+
+.twin-main {
+  width: 100%;
+  background-color: #fecaca;
+}
+
+.twin-main-wrap {
+  margin: 0 190px;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.twin-left {
+  width: 190px;
+  background-color: #fed7aa;
+  margin-left: -100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.twin-right {
+  width: 190px;
+  background-color: #bae6fd;
+  margin-left: -190px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  padding: 20px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1e3a8a;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* 代码区域 */
+.code-section {
+  margin-bottom: 32px;
+}
+
+.code-section h4 {
+  font-size: 18px;
+  color: #1e3a8a;
+  margin: 0 0 12px 0;
+  font-weight: 600;
+}
+
+.code-block {
+  background: #1e293b;
+  color: #e2e8f0;
+  padding: 16px;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* 步骤说明 */
+.steps-section {
+  margin-top: 32px;
+}
+
+.steps-section h4 {
+  font-size: 20px;
+  color: #1e3a8a;
+  margin: 0 0 20px 0;
+  font-weight: 600;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.step {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 16px;
+  background: #f8fafc;
+  border-radius: 8px;
+  border-left: 4px solid #1e40af;
+}
+
+.step-number {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.step-content {
+  flex: 1;
+}
+
+.step-content h5 {
+  font-size: 16px;
+  color: #1e3a8a;
+  margin: 0 0 8px 0;
+  font-weight: 600;
+}
+
+.step-content p {
+  font-size: 14px;
+  color: #475569;
+  margin: 0 0 8px 0;
+  line-height: 1.6;
+}
+
+.step-content code {
+  display: inline-block;
+  background: #1e293b;
+  color: #7dd3fc;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+  font-size: 13px;
+}
+
+/* 对比表格 */
+.comparison-section {
+  background: white;
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  margin-bottom: 24px;
+}
+
+.comparison-section h2 {
+  font-size: 28px;
+  color: #1e3a8a;
+  margin: 0 0 24px 0;
+  font-weight: 600;
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+}
+
+.comparison-table thead {
+  background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+  color: white;
+}
+
+.comparison-table th {
+  padding: 16px;
+  text-align: left;
+  font-weight: 600;
+}
+
+.comparison-table tbody tr {
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.comparison-table tbody tr:hover {
+  background: #f8fafc;
+}
+
+.comparison-table td {
+  padding: 16px;
+  color: #475569;
+}
+
+.comparison-table td:first-child {
+  font-weight: 600;
+  color: #1e3a8a;
+}
+
+/* 原理说明 */
+.principle-section {
+  background: white;
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  margin-bottom: 24px;
+}
+
+.principle-section h2 {
+  font-size: 28px;
+  color: #1e3a8a;
+  margin: 0 0 24px 0;
+  font-weight: 600;
+}
+
+.principle-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.principle-card {
+  padding: 20px;
+  background: #f8fafc;
+  border-radius: 8px;
+  border-left: 4px solid #1e40af;
+}
+
+.principle-card h3 {
+  font-size: 18px;
+  color: #1e3a8a;
+  margin: 0 0 12px 0;
+  font-weight: 600;
+}
+
+.principle-card p {
+  font-size: 15px;
+  color: #475569;
+  margin: 0 0 12px 0;
+  line-height: 1.6;
+}
+
+.principle-card code {
+  background: #1e293b;
+  color: #7dd3fc;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+  font-size: 13px;
+}
+
+.principle-card ul {
+  margin: 0;
+  padding-left: 24px;
+}
+
+.principle-card li {
+  font-size: 15px;
+  color: #475569;
+  line-height: 1.8;
+  margin-bottom: 8px;
+}
+
+.principle-card strong {
+  color: #1e3a8a;
+  font-weight: 600;
+}
+
+/* 现代方案 */
+.modern-section {
+  background: white;
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.modern-section h2 {
+  font-size: 28px;
+  color: #1e3a8a;
+  margin: 0 0 24px 0;
+  font-weight: 600;
+}
+
+.modern-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.modern-card {
+  background: #f8fafc;
+  padding: 20px;
+  border-radius: 8px;
+  border: 2px solid #e2e8f0;
+}
+
+.modern-card h3 {
+  font-size: 18px;
+  color: #1e3a8a;
+  margin: 0 0 12px 0;
+  font-weight: 600;
+}
+
+.modern-note {
+  padding: 16px;
+  background: #eff6ff;
+  border-radius: 8px;
+  border-left: 4px solid #3b82f6;
+  color: #1e3a8a;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* 响应式 */
+@media (max-width: 768px) {
+  .classic-layouts-page {
+    padding: 20px;
+  }
+
+  .page-header {
+    padding: 24px;
+  }
+
+  .page-header h1 {
+    font-size: 28px;
+  }
+
+  .goals-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .demo-container {
+    overflow-x: auto;
+  }
+
+  .holy-grail-container,
+  .twin-wings-container {
+    min-width: 600px;
+  }
+
+  .modern-grid {
+    grid-template-columns: 1fr;
+  }
+}
+

@@ -22,6 +22,11 @@ export const routesConfig: RouteConfig[] = [
     icon: '🎨',
   },
   {
+    path: '/classic-layouts',
+    label: '经典布局',
+    icon: '📐',
+  },
+  {
     path: '/about',
     label: '关于',
     icon: 'ℹ️',
