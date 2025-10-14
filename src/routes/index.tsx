@@ -17,6 +17,11 @@ export const routesConfig: RouteConfig[] = [
     icon: '🚀',
   },
   {
+    path: '/css-selectors',
+    label: 'CSS选择器',
+    icon: '🎨',
+  },
+  {
     path: '/about',
     label: '关于',
     icon: 'ℹ️',
