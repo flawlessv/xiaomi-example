@@ -1,53 +1,120 @@
-# React 17 + TypeScript 项目
+# 快速启动指南
 
-这是一个使用 Create React App 创建的 React 17 版本项目，包含 TypeScript 支持。
+## 可用的启动命令
 
-## 技术栈
+### 🚀 同时启动前后端（推荐）
 
-- React 17.0.2
-- TypeScript 4.9.5
-- React DOM 17.0.2
-- Create React App 5.0.1
+```bash
+npm run dev
+```
 
-## 可用脚本
+这个命令会同时启动：
+- **后端服务器** (蓝色输出) - 运行在 `http://localhost:3001`
+- **前端应用** (绿色输出) - 运行在 `http://localhost:3000`
 
-在项目目录中，你可以运行：
+输出会用不同颜色区分，方便查看日志。
 
-### `npm start`
+---
 
-在开发模式下运行应用程序。
-打开 [http://localhost:3000](http://localhost:3000) 在浏览器中查看。
+### 分别启动
 
-当你进行更改时，页面将重新加载。
-你还可以在控制台中看到任何 lint 错误。
+#### 仅启动前端
+```bash
+npm start
+```
+- 前端会运行在 `http://localhost:3000`
+- 需要手动启动后端才能访问API接口
 
-### `npm test`
+#### 仅启动后端
+```bash
+npm run server
+```
+- 后端会运行在 `http://localhost:3001`
+- 可以单独测试API接口
 
-以交互式观察模式启动测试运行器。
-有关更多信息，请参阅关于 [运行测试](https://facebook.github.io/create-react-app/docs/running-tests) 的部分。
+---
 
-### `npm run build`
+## 启动后访问
 
-将生产应用程序构建到 `build` 文件夹。
-它在生产模式下正确捆绑 React，并优化构建以获得最佳性能。
+### 前端应用
+打开浏览器访问: `http://localhost:3000`
 
-构建被最小化，文件名包括哈希值。
-你的应用程序已准备好部署！
+### 可用页面
+- 🏠 **首页** - `/`
+- 📊 **数据表格** - `/table`
+- 🚀 **虚拟滚动** - `/virtual-list` (需要后端运行)
+- ℹ️ **关于** - `/about`
 
-有关更多信息，请参阅关于 [部署](https://facebook.github.io/create-react-app/docs/deployment) 的部分。
+### 后端API
+- 📡 **API文档** - `http://localhost:3001/api`
+- 🏥 **健康检查** - `http://localhost:3001/health`
+- 📦 **虚拟列表API** - `http://localhost:3001/api/virtual-list/data`
 
-### `npm run eject`
+---
 
-**注意：这是单向操作。一旦你 `eject`，你就不能回去了！**
+## 常见问题
 
-如果你对构建工具和配置选择不满意，你可以随时 `eject`。这个命令将从你的项目中删除单个构建依赖项。
+### Q: 端口被占用怎么办？
+**A:** 
+- 前端端口被占用：会自动提示使用其他端口
+- 后端端口被占用：修改 `server/config/index.js` 中的 `port` 配置
 
-相反，它会将所有配置文件和传递依赖项（webpack、Babel、ESLint 等）复制到你的项目中，这样你就可以完全控制它们。除了 `eject` 之外的所有命令仍然有效，但它们将指向复制的脚本，这样你就可以调整它们。在这一点上，你是靠自己。
+### Q: 如何停止服务？
+**A:** 在终端按 `Ctrl + C` 停止
 
-你不必使用 `eject`。精选的功能集适用于中小型部署，你不应该觉得有义务使用此功能。但是我们知道，如果你准备好时无法自定义，这个工具将没有用。
+### Q: 虚拟滚动页面无法加载数据？
+**A:** 确保后端服务器正在运行，使用 `npm run dev` 同时启动前后端
 
-## 了解更多
+### Q: 如何查看后端日志？
+**A:** 
+- 使用 `npm run dev`：在终端可以看到蓝色的后端日志
+- 使用 `npm run server`：可以单独查看后端日志
 
-你可以了解更多关于 [Create React App](https://facebook.github.io/create-react-app/docs/getting-started) 的信息。
+---
 
-要学习 React，请查看 [React 文档](https://reactjs.org/)。
+## 开发流程建议
+
+1. **开始开发**: 运行 `npm run dev`
+2. **前端开发**: 修改 `src/` 目录下的文件，热重载自动生效
+3. **后端开发**: 修改 `server/` 目录下的文件，需要手动重启后端
+4. **添加新页面**: 参考 `ROUTES_GUIDE.md`
+5. **添加新API**: 参考 `server/README.md`
+
+---
+
+## 脚本说明
+
+| 命令 | 说明 | 用途 |
+|------|------|------|
+| `npm run dev` | 同时启动前后端 | 日常开发（推荐） |
+| `npm start` | 仅启动前端 | 纯前端开发或后端已运行 |
+| `npm run server` | 仅启动后端 | 后端开发或API测试 |
+| `npm run build` | 构建生产版本 | 部署前构建 |
+| `npm test` | 运行测试 | 单元测试 |
+
+---
+
+## 首次运行
+
+如果是首次克隆项目，请先安装依赖：
+
+```bash
+npm install
+```
+
+然后运行：
+
+```bash
+npm run dev
+```
+
+就可以开始开发了！🎉
+
+---
+
+## 📚 更多文档
+
+- [路由扩展指南](./ROUTES_GUIDE.md) - 如何添加新的页面和路由
+- [后端API文档](./server/README.md) - 如何添加新的API模块
+- [虚拟列表性能优化](./docs/VIRTUAL_LIST_OPTIMIZATION.md) - 深入理解请求优化和区间交集算法
+
