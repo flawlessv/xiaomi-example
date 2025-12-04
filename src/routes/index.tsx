@@ -27,6 +27,11 @@ export const routesConfig: RouteConfig[] = [
     icon: '📐',
   },
   {
+    path: '/dom-export-image',
+    label: 'DOM导出图片',
+    icon: '🖼️',
+  },
+  {
     path: '/about',
     label: '关于',
     icon: 'ℹ️',

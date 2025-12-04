@@ -6,6 +6,7 @@ import About from './pages/About';
 import VirtualListPage from './pages/VirtualList';
 import CSSSelectorsPage from './pages/CSSSelectors';
 import ClassicLayoutsPage from './pages/ClassicLayouts';
+import DOMExportImagePage from './pages/DOMExportImage';
 import { routesConfig } from './routes';
 import './App.css';
 
@@ -18,6 +19,7 @@ function App() {
           <Route path="/virtual-list" component={VirtualListPage} />
           <Route path="/css-selectors" component={CSSSelectorsPage} />
           <Route path="/classic-layouts" component={ClassicLayoutsPage} />
+          <Route path="/dom-export-image" component={DOMExportImagePage} />
           <Route path="/about" component={About} />
           {/* 在这里添加更多路由 */}
         </Switch>
